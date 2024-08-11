@@ -27,7 +27,27 @@ body {
 }
 
 @layer utilities {
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+  .no-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
   .text-balance {
     text-wrap: balance;
+  }
+
+  .bounceOut {
+    animation: scale 1.5s both;
+  }
+
+  @keyframes scale {
+    50% {
+      transform: scale(0.7);
+    }
+    100% {
+      transform: scale(1);
+    }
   }
 }
