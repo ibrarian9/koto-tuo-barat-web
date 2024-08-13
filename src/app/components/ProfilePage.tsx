@@ -20,7 +20,7 @@ export default function ProfilePage() {
             <div className="flex mx-24 h-96 w-full">
                 <div className="flex flex-col flex-1 px-12 justify-between h-full">
                     <h1 className="text-3xl font-bold text-secondary">DESA KOTO TUO BARAT</h1>
-                    <p className="text-justify">
+                    <p className="text-justify indent-8">
                         {desc}
                     </p>
                     <Link className="border-2 border-secondary rounded-xl font-medium

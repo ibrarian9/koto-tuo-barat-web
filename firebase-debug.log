@@ -1,0 +1,324 @@
+[debug] [2024-08-13T04:24:01.994Z] ----------------------------------------------------------------------
+[debug] [2024-08-13T04:24:01.996Z] Command:       /home/moriarty/.nvm/versions/node/v20.12.1/bin/node /home/moriarty/.nvm/versions/node/v20.12.1/bin/firebase init
+[debug] [2024-08-13T04:24:01.997Z] CLI Version:   13.15.1
+[debug] [2024-08-13T04:24:01.997Z] Platform:      linux
+[debug] [2024-08-13T04:24:01.997Z] Node Version:  v20.12.1
+[debug] [2024-08-13T04:24:01.997Z] Time:          Tue Aug 13 2024 11:24:01 GMT+0700 (Western Indonesia Time)
+[debug] [2024-08-13T04:24:01.997Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-08-13T04:24:02.002Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-08-13T04:24:02.003Z] > authorizing via signed-in user (ibrarian9@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  /home/moriarty/Documents/koto-tuo-barat-web
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[info] i  If you want to create a project in a Google Cloud organization or folder, please use "firebase projects:create" instead, and return to this command when you've created the project. 
+[debug] [2024-08-13T04:24:45.083Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects [none]
+[debug] [2024-08-13T04:24:45.084Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects {"projectId":"webdesa01","name":"webdesa01"}
+[debug] [2024-08-13T04:24:47.989Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects 200
+[debug] [2024-08-13T04:24:47.989Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects {"name":"operations/cp.7137385843791890600"}
+[debug] [2024-08-13T04:24:47.992Z] >>> [apiv2][query] GET https://cloudresourcemanager.googleapis.com/v1/operations/cp.7137385843791890600 [none]
+[debug] [2024-08-13T04:24:49.407Z] <<< [apiv2][status] GET https://cloudresourcemanager.googleapis.com/v1/operations/cp.7137385843791890600 200
+[debug] [2024-08-13T04:24:49.407Z] <<< [apiv2][body] GET https://cloudresourcemanager.googleapis.com/v1/operations/cp.7137385843791890600 {"name":"operations/cp.7137385843791890600"}
+[debug] [2024-08-13T04:24:49.909Z] [Project Creation Poller] Retrying task index 0
+[debug] [2024-08-13T04:24:49.911Z] >>> [apiv2][query] GET https://cloudresourcemanager.googleapis.com/v1/operations/cp.7137385843791890600 [none]
+[debug] [2024-08-13T04:24:50.655Z] <<< [apiv2][status] GET https://cloudresourcemanager.googleapis.com/v1/operations/cp.7137385843791890600 200
+[debug] [2024-08-13T04:24:50.656Z] <<< [apiv2][body] GET https://cloudresourcemanager.googleapis.com/v1/operations/cp.7137385843791890600 {"name":"operations/cp.7137385843791890600","metadata":{"@type":"type.googleapis.com/google.cloudresourcemanager.v1.ProjectCreationStatus","gettable":true}}
+[debug] [2024-08-13T04:24:51.656Z] [Project Creation Poller] Retrying task index 0
+[debug] [2024-08-13T04:24:51.657Z] >>> [apiv2][query] GET https://cloudresourcemanager.googleapis.com/v1/operations/cp.7137385843791890600 [none]
+[debug] [2024-08-13T04:24:52.374Z] <<< [apiv2][status] GET https://cloudresourcemanager.googleapis.com/v1/operations/cp.7137385843791890600 200
+[debug] [2024-08-13T04:24:52.375Z] <<< [apiv2][body] GET https://cloudresourcemanager.googleapis.com/v1/operations/cp.7137385843791890600 {"name":"operations/cp.7137385843791890600","metadata":{"@type":"type.googleapis.com/google.cloudresourcemanager.v1.ProjectCreationStatus","gettable":true,"ready":true},"done":true,"response":{"@type":"type.googleapis.com/google.cloudresourcemanager.v1.Project","projectNumber":"302710778761","projectId":"webdesa01","lifecycleState":"ACTIVE","name":"webdesa01","createTime":"2024-08-13T04:24:49.503705Z"}}
+[debug] [2024-08-13T04:24:52.379Z] >>> [apiv2][query] POST https://firebase.googleapis.com/v1beta1/projects/webdesa01:addFirebase [none]
+[debug] [2024-08-13T04:24:57.188Z] <<< [apiv2][status] POST https://firebase.googleapis.com/v1beta1/projects/webdesa01:addFirebase 200
+[debug] [2024-08-13T04:24:57.189Z] <<< [apiv2][body] POST https://firebase.googleapis.com/v1beta1/projects/webdesa01:addFirebase {"name":"operations/workflows/OTAwMmM2MmItYjg3MC00YjBjLTkwN2ItMzI5MTUwNmU1ZmM5"}
+[debug] [2024-08-13T04:24:57.190Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/operations/workflows/OTAwMmM2MmItYjg3MC00YjBjLTkwN2ItMzI5MTUwNmU1ZmM5 [none]
+[debug] [2024-08-13T04:24:58.988Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/operations/workflows/OTAwMmM2MmItYjg3MC00YjBjLTkwN2ItMzI5MTUwNmU1ZmM5 200
+[debug] [2024-08-13T04:24:58.988Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/operations/workflows/OTAwMmM2MmItYjg3MC00YjBjLTkwN2ItMzI5MTUwNmU1ZmM5 {"name":"operations/workflows/OTAwMmM2MmItYjg3MC00YjBjLTkwN2ItMzI5MTUwNmU1ZmM5"}
+[debug] [2024-08-13T04:24:59.489Z] [Add Firebase Poller] Retrying task index 0
+[debug] [2024-08-13T04:24:59.490Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/operations/workflows/OTAwMmM2MmItYjg3MC00YjBjLTkwN2ItMzI5MTUwNmU1ZmM5 [none]
+[debug] [2024-08-13T04:25:06.409Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/operations/workflows/OTAwMmM2MmItYjg3MC00YjBjLTkwN2ItMzI5MTUwNmU1ZmM5 200
+[debug] [2024-08-13T04:25:06.410Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/operations/workflows/OTAwMmM2MmItYjg3MC00YjBjLTkwN2ItMzI5MTUwNmU1ZmM5 {"name":"operations/workflows/OTAwMmM2MmItYjg3MC00YjBjLTkwN2ItMzI5MTUwNmU1ZmM5"}
+[debug] [2024-08-13T04:25:07.409Z] [Add Firebase Poller] Retrying task index 0
+[debug] [2024-08-13T04:25:07.410Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/operations/workflows/OTAwMmM2MmItYjg3MC00YjBjLTkwN2ItMzI5MTUwNmU1ZmM5 [none]
+[debug] [2024-08-13T04:25:09.639Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/operations/workflows/OTAwMmM2MmItYjg3MC00YjBjLTkwN2ItMzI5MTUwNmU1ZmM5 200
+[debug] [2024-08-13T04:25:09.639Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/operations/workflows/OTAwMmM2MmItYjg3MC00YjBjLTkwN2ItMzI5MTUwNmU1ZmM5 {"name":"operations/workflows/OTAwMmM2MmItYjg3MC00YjBjLTkwN2ItMzI5MTUwNmU1ZmM5","done":true,"response":{"@type":"type.googleapis.com/google.firebase.service.v1beta1.FirebaseProject","projectId":"webdesa01","projectNumber":"302710778761","displayName":"webdesa01","name":"projects/webdesa01","resources":{"hostingSite":"webdesa01"}}}
+[info] 
+[info] 🎉🎉🎉 Your Firebase project is ready! 🎉🎉🎉
+[info] 
+[info] Project information:
+[info]    - Project ID: webdesa01
+[info]    - Project Name: webdesa01
+[info] 
+[info] Firebase console is available at
+[info] https://console.firebase.google.com/project/webdesa01/overview
+[info] i  Using project webdesa01 (webdesa01) 
+[info] 
+=== Hosting Setup
+[debug] [2024-08-13T04:25:09.646Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/webdesa01 [none]
+[debug] [2024-08-13T04:25:13.404Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/webdesa01 200
+[debug] [2024-08-13T04:25:13.405Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/webdesa01 {"projectId":"webdesa01","projectNumber":"302710778761","displayName":"webdesa01","name":"projects/webdesa01","resources":{"hostingSite":"webdesa01"},"state":"ACTIVE","etag":"1_4d2822e7-8929-45fa-b822-21a38a2f116e"}
+[info] 
+[info] Your public directory is the folder (relative to your project directory) that
+[info] will contain Hosting assets to be uploaded with firebase deploy. If you
+[info] have a build process for your assets, use your build's output directory.
+[info] 
+[info] ✔  Wrote public/404.html 
+[debug] [2024-08-13T04:29:23.484Z] >>> [apiv2][query] GET https://www.gstatic.com/firebasejs/releases.json [none]
+[debug] [2024-08-13T04:29:35.440Z] *** [apiv2] error from fetch(https://www.gstatic.com/firebasejs/releases.json, {"headers":{},"method":"GET"}): FetchError: request to https://www.gstatic.com/firebasejs/releases.json failed, reason: 
+[debug] [2024-08-13T04:29:40.450Z] Error: Timed out.
+    at Timeout._onTimeout (/home/moriarty/.nvm/versions/node/v20.12.1/lib/node_modules/firebase-tools/lib/utils.js:268:49)
+    at listOnTimeout (node:internal/timers:573:17)
+    at process.processTimers (node:internal/timers:514:7)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2024-08-13T04:30:53.561Z] ----------------------------------------------------------------------
+[debug] [2024-08-13T04:30:53.563Z] Command:       /home/moriarty/.nvm/versions/node/v20.12.1/bin/node /home/moriarty/.nvm/versions/node/v20.12.1/bin/firebase init
+[debug] [2024-08-13T04:30:53.564Z] CLI Version:   13.15.1
+[debug] [2024-08-13T04:30:53.564Z] Platform:      linux
+[debug] [2024-08-13T04:30:53.564Z] Node Version:  v20.12.1
+[debug] [2024-08-13T04:30:53.564Z] Time:          Tue Aug 13 2024 11:30:53 GMT+0700 (Western Indonesia Time)
+[debug] [2024-08-13T04:30:53.564Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-08-13T04:30:53.570Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-08-13T04:30:53.570Z] > authorizing via signed-in user (ibrarian9@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  /home/moriarty/Documents/koto-tuo-barat-web
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[info] i  If you want to create a project in a Google Cloud organization or folder, please use "firebase projects:create" instead, and return to this command when you've created the project. 
+[debug] [2024-08-13T04:31:09.830Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects [none]
+[debug] [2024-08-13T04:31:09.831Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects {"projectId":"webdesa01","name":"webdesa01"}
+[debug] [2024-08-13T04:31:24.832Z] *** [apiv2] error from fetch(https://cloudresourcemanager.googleapis.com/v1/projects, {"headers":{},"method":"POST","signal":{},"body":"{\"projectId\":\"webdesa01\",\"name\":\"webdesa01\"}"}): AbortError: The user aborted a request.
+[debug] [2024-08-13T04:31:27.911Z] FirebaseError: Timeout reached making request to https://cloudresourcemanager.googleapis.com/v1/projects
+    at RetryOperation._fn (/home/moriarty/.nvm/versions/node/v20.12.1/lib/node_modules/firebase-tools/lib/apiv2.js:255:35)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+[error] 
+[error] Error: Failed to create project. See firebase-debug.log for more info.
+[debug] [2024-08-13T04:32:12.593Z] ----------------------------------------------------------------------
+[debug] [2024-08-13T04:32:12.595Z] Command:       /home/moriarty/.nvm/versions/node/v20.12.1/bin/node /home/moriarty/.nvm/versions/node/v20.12.1/bin/firebase init
+[debug] [2024-08-13T04:32:12.595Z] CLI Version:   13.15.1
+[debug] [2024-08-13T04:32:12.596Z] Platform:      linux
+[debug] [2024-08-13T04:32:12.596Z] Node Version:  v20.12.1
+[debug] [2024-08-13T04:32:12.596Z] Time:          Tue Aug 13 2024 11:32:12 GMT+0700 (Western Indonesia Time)
+[debug] [2024-08-13T04:32:12.596Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-08-13T04:32:12.601Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-08-13T04:32:12.601Z] > authorizing via signed-in user (ibrarian9@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  /home/moriarty/Documents/koto-tuo-barat-web
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[info] i  If you want to create a project in a Google Cloud organization or folder, please use "firebase projects:create" instead, and return to this command when you've created the project. 
+[debug] [2024-08-13T04:32:22.211Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects [none]
+[debug] [2024-08-13T04:32:22.212Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects {"projectId":"webdesa01","name":"webdesa01"}
+[debug] [2024-08-13T04:32:24.546Z] *** [apiv2] error from fetch(https://cloudresourcemanager.googleapis.com/v1/projects, {"headers":{},"method":"POST","signal":{},"body":"{\"projectId\":\"webdesa01\",\"name\":\"webdesa01\"}"}): FetchError: request to https://cloudresourcemanager.googleapis.com/v1/projects failed, reason: 
+[debug] [2024-08-13T04:32:26.073Z] FirebaseError: Failed to make request to https://cloudresourcemanager.googleapis.com/v1/projects
+    at RetryOperation._fn (/home/moriarty/.nvm/versions/node/v20.12.1/lib/node_modules/firebase-tools/lib/apiv2.js:259:31)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+[error] 
+[error] Error: Failed to create project. See firebase-debug.log for more info.
+[debug] [2024-08-13T04:45:52.084Z] ----------------------------------------------------------------------
+[debug] [2024-08-13T04:45:52.086Z] Command:       /home/moriarty/.nvm/versions/node/v20.12.1/bin/node /home/moriarty/.nvm/versions/node/v20.12.1/bin/firebase init
+[debug] [2024-08-13T04:45:52.087Z] CLI Version:   13.15.1
+[debug] [2024-08-13T04:45:52.087Z] Platform:      linux
+[debug] [2024-08-13T04:45:52.087Z] Node Version:  v20.12.1
+[debug] [2024-08-13T04:45:52.087Z] Time:          Tue Aug 13 2024 11:45:52 GMT+0700 (Western Indonesia Time)
+[debug] [2024-08-13T04:45:52.087Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-08-13T04:45:52.092Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-08-13T04:45:52.093Z] > authorizing via signed-in user (ibrarian9@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  /home/moriarty/Documents/koto-tuo-barat-web
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[info] i  If you want to create a project in a Google Cloud organization or folder, please use "firebase projects:create" instead, and return to this command when you've created the project. 
+[debug] [2024-08-13T04:46:03.371Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects [none]
+[debug] [2024-08-13T04:46:03.371Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects {"projectId":"webdesa01","name":"webdesa01"}
+[debug] [2024-08-13T04:46:03.430Z] *** [apiv2] error from fetch(https://cloudresourcemanager.googleapis.com/v1/projects, {"headers":{},"method":"POST","signal":{},"body":"{\"projectId\":\"webdesa01\",\"name\":\"webdesa01\"}"}): FetchError: request to https://cloudresourcemanager.googleapis.com/v1/projects failed, reason: getaddrinfo EAI_AGAIN cloudresourcemanager.googleapis.com
+[debug] [2024-08-13T04:46:03.436Z] FirebaseError: Failed to make request to https://cloudresourcemanager.googleapis.com/v1/projects
+    at RetryOperation._fn (/home/moriarty/.nvm/versions/node/v20.12.1/lib/node_modules/firebase-tools/lib/apiv2.js:259:31)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+[error] 
+[error] Error: Failed to create project. See firebase-debug.log for more info.
+[debug] [2024-08-13T04:46:07.580Z] ----------------------------------------------------------------------
+[debug] [2024-08-13T04:46:07.583Z] Command:       /home/moriarty/.nvm/versions/node/v20.12.1/bin/node /home/moriarty/.nvm/versions/node/v20.12.1/bin/firebase init
+[debug] [2024-08-13T04:46:07.583Z] CLI Version:   13.15.1
+[debug] [2024-08-13T04:46:07.583Z] Platform:      linux
+[debug] [2024-08-13T04:46:07.584Z] Node Version:  v20.12.1
+[debug] [2024-08-13T04:46:07.584Z] Time:          Tue Aug 13 2024 11:46:07 GMT+0700 (Western Indonesia Time)
+[debug] [2024-08-13T04:46:07.584Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-08-13T04:46:07.589Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-08-13T04:46:07.589Z] > authorizing via signed-in user (ibrarian9@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  /home/moriarty/Documents/koto-tuo-barat-web
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[info] i  If you want to create a project in a Google Cloud organization or folder, please use "firebase projects:create" instead, and return to this command when you've created the project. 
+[debug] [2024-08-13T04:46:36.833Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects [none]
+[debug] [2024-08-13T04:46:36.837Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects {"projectId":"webdesa01","name":"webdesa01"}
+[debug] [2024-08-13T04:46:44.110Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects 409
+[debug] [2024-08-13T04:46:44.110Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects {"error":{"code":409,"message":"Requested entity already exists","status":"ALREADY_EXISTS"}}
+[debug] [2024-08-13T04:46:48.372Z] FirebaseError: HTTP Error: 409, Requested entity already exists
+    at responseToError (/home/moriarty/.nvm/versions/node/v20.12.1/lib/node_modules/firebase-tools/lib/responseToError.js:49:12)
+    at RetryOperation._fn (/home/moriarty/.nvm/versions/node/v20.12.1/lib/node_modules/firebase-tools/lib/apiv2.js:305:77)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+[error] 
+[error] Error: Failed to create project because there is already a project with ID webdesa01. Please try again with a unique project ID.
+[debug] [2024-08-13T04:46:55.377Z] ----------------------------------------------------------------------
+[debug] [2024-08-13T04:46:55.382Z] Command:       /home/moriarty/.nvm/versions/node/v20.12.1/bin/node /home/moriarty/.nvm/versions/node/v20.12.1/bin/firebase init
+[debug] [2024-08-13T04:46:55.383Z] CLI Version:   13.15.1
+[debug] [2024-08-13T04:46:55.383Z] Platform:      linux
+[debug] [2024-08-13T04:46:55.383Z] Node Version:  v20.12.1
+[debug] [2024-08-13T04:46:55.384Z] Time:          Tue Aug 13 2024 11:46:55 GMT+0700 (Western Indonesia Time)
+[debug] [2024-08-13T04:46:55.384Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-08-13T04:46:55.393Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-08-13T04:46:55.394Z] > authorizing via signed-in user (ibrarian9@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  /home/moriarty/Documents/koto-tuo-barat-web
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[info] i  If you want to create a project in a Google Cloud organization or folder, please use "firebase projects:create" instead, and return to this command when you've created the project. 
+[debug] [2024-08-13T04:47:11.349Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects [none]
+[debug] [2024-08-13T04:47:11.350Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects {"projectId":"webdesa1","name":"webdesakototuobarat01"}
+[debug] [2024-08-13T04:47:18.219Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects 200
+[debug] [2024-08-13T04:47:18.220Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects {"name":"operations/cp.5978026223405766865"}
+[debug] [2024-08-13T04:47:18.223Z] >>> [apiv2][query] GET https://cloudresourcemanager.googleapis.com/v1/operations/cp.5978026223405766865 [none]
+[debug] [2024-08-13T04:47:19.829Z] <<< [apiv2][status] GET https://cloudresourcemanager.googleapis.com/v1/operations/cp.5978026223405766865 200
+[debug] [2024-08-13T04:47:19.830Z] <<< [apiv2][body] GET https://cloudresourcemanager.googleapis.com/v1/operations/cp.5978026223405766865 {"name":"operations/cp.5978026223405766865"}
+[debug] [2024-08-13T04:47:20.331Z] [Project Creation Poller] Retrying task index 0
+[debug] [2024-08-13T04:47:20.333Z] >>> [apiv2][query] GET https://cloudresourcemanager.googleapis.com/v1/operations/cp.5978026223405766865 [none]
+[debug] [2024-08-13T04:47:37.866Z] <<< [apiv2][status] GET https://cloudresourcemanager.googleapis.com/v1/operations/cp.5978026223405766865 200
+[debug] [2024-08-13T04:47:37.867Z] <<< [apiv2][body] GET https://cloudresourcemanager.googleapis.com/v1/operations/cp.5978026223405766865 {"name":"operations/cp.5978026223405766865","metadata":{"@type":"type.googleapis.com/google.cloudresourcemanager.v1.ProjectCreationStatus","gettable":true,"ready":true},"done":true,"response":{"@type":"type.googleapis.com/google.cloudresourcemanager.v1.Project","projectNumber":"625236063703","projectId":"webdesa1","lifecycleState":"ACTIVE","name":"webdesakototuobarat01","createTime":"2024-08-13T04:47:19.722403Z"}}
+[debug] [2024-08-13T04:47:37.871Z] >>> [apiv2][query] POST https://firebase.googleapis.com/v1beta1/projects/webdesa1:addFirebase [none]
+[debug] [2024-08-13T04:47:52.872Z] *** [apiv2] error from fetch(https://firebase.googleapis.com/v1beta1/projects/webdesa1:addFirebase, {"headers":{},"method":"POST","signal":{}}): AbortError: The user aborted a request.
+[debug] [2024-08-13T04:47:52.872Z] Timeout reached making request to https://firebase.googleapis.com/v1beta1/projects/webdesa1:addFirebase
+[debug] [2024-08-13T04:47:57.882Z] Error: Timed out.
+    at Timeout._onTimeout (/home/moriarty/.nvm/versions/node/v20.12.1/lib/node_modules/firebase-tools/lib/utils.js:268:49)
+    at listOnTimeout (node:internal/timers:573:17)
+    at process.processTimers (node:internal/timers:514:7)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2024-08-13T04:48:25.565Z] ----------------------------------------------------------------------
+[debug] [2024-08-13T04:48:25.567Z] Command:       /home/moriarty/.nvm/versions/node/v20.12.1/bin/node /home/moriarty/.nvm/versions/node/v20.12.1/bin/firebase init
+[debug] [2024-08-13T04:48:25.568Z] CLI Version:   13.15.1
+[debug] [2024-08-13T04:48:25.568Z] Platform:      linux
+[debug] [2024-08-13T04:48:25.568Z] Node Version:  v20.12.1
+[debug] [2024-08-13T04:48:25.568Z] Time:          Tue Aug 13 2024 11:48:25 GMT+0700 (Western Indonesia Time)
+[debug] [2024-08-13T04:48:25.568Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-08-13T04:48:25.573Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-08-13T04:48:25.574Z] > authorizing via signed-in user (ibrarian9@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  /home/moriarty/Documents/koto-tuo-barat-web
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[info] i  If you want to create a project in a Google Cloud organization or folder, please use "firebase projects:create" instead, and return to this command when you've created the project. 
+[debug] [2024-08-13T04:48:53.121Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects [none]
+[debug] [2024-08-13T04:48:53.122Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects {"projectId":"webdesakototuobarat","name":"webdesakototuobarat"}
+[debug] [2024-08-13T04:49:06.899Z] *** [apiv2] error from fetch(https://cloudresourcemanager.googleapis.com/v1/projects, {"headers":{},"method":"POST","signal":{},"body":"{\"projectId\":\"webdesakototuobarat\",\"name\":\"webdesakototuobarat\"}"}): FetchError: request to https://cloudresourcemanager.googleapis.com/v1/projects failed, reason: socket hang up
+[debug] [2024-08-13T04:49:11.912Z] Error: Timed out.
+    at Timeout._onTimeout (/home/moriarty/.nvm/versions/node/v20.12.1/lib/node_modules/firebase-tools/lib/utils.js:268:49)
+    at listOnTimeout (node:internal/timers:573:17)
+    at process.processTimers (node:internal/timers:514:7)
+[error] 
+[error] Error: An unexpected error has occurred.

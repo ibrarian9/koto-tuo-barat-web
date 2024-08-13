@@ -17,14 +17,14 @@ export default function Navbar() {
 
     return (
         <header className="fixed inset-x-0 top-0 z-[999]">
-            <nav className="flex items-center justify-between p-3 lg:px-8 bg-primary" aria-label="Global">
+            <nav className="flex items-center justify-between p-3 lg:px-8 bg-secondary bg-opacity-35 text-primary" aria-label="Global">
                 <Link href="/" className="flex flex-none" passHref>
                     <div className="-m-1.5 p-1.5">
                         <span className="sr-only">Logo XII Koto Kampar</span>
                         <img className="h-12 w-auto" src="/logo-13-koto-kampar.png" alt="XII Koto Kampar"/>
                     </div>
                     <div className="grid place-items-center mx-2">
-                        <h2 className="font-medium text-secondary">Desa Koto Tuo Barat</h2>
+                        <h2 className="font-medium">Desa Koto Tuo Barat</h2>
                     </div>
                 </Link>
                 <div className="flex lg:hidden">
@@ -47,7 +47,7 @@ export default function Navbar() {
                                 smooth={true}
                                 duration={1000}
                                 offset={-70}
-                                className='w-auto font-medium text-secondary md:grid items-center'
+                                className="w-auto font-medium md:grid items-center"
                             >
                                 {item.name}
                             </ScrollLink>

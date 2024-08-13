@@ -53,7 +53,7 @@ export default function ProfilePage(){
             </div>
             <div className="min-h-screen w-full bg-primary flex flex-col items-center justify-center">
                 <div className="h-fit w-full text-secondary">
-                    <h1 className="text-3xl font-bold text-center m-5">VISI & MISI</h1>
+                    <h1 className="text-3xl font-bold text-center mb-14">VISI & MISI</h1>
                     <div className="grid grid-cols-2 gap-20 w-full h-full px-36">
                         <div className="h-full">
                             <p className="text-justify indent-10 p-10 border-2 h-full">
