@@ -1,7 +1,7 @@
 "use client"
 
-import Link from "next/link";
 import {useState} from "react";
+import Link from "next/link";
 import {data} from "@/app/data";
 
 export default function GalleryPage() {
@@ -25,12 +25,7 @@ export default function GalleryPage() {
                                 backgroundSize: 'cover',
                                 backgroundPosition: 'center'
                             }}
-                            href={{
-                                pathname: "/detail",
-                                query: {
-                                    id: item.id,
-                                }
-                            }}>
+                            href={`/detail/${item.id}`}>
                             <div className="flex-grow"></div>
                             <h3 className="text-secondary font-bold text-xl px-5 pb-3 pt-7 bg-gradient-to-t from-primary w-full">
                                 {item.nama}

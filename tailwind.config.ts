@@ -11,6 +11,9 @@ const config: Config = {
       primary: "#333D79",
       secondary: "#FAEBEF",
     },
+    experimental: {
+      missingSuspenseWithCSRBailout: false
+    },
     extend: {
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
