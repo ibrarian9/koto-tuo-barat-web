@@ -16,19 +16,19 @@ export default function ProfilePage() {
 
 
     return (
-        <div className="flex min-h-screen flex-col items-center justify-start p-32 bg-primary">
-            <div className="flex mx-24 h-96 w-full">
+        <div className="flex min-h-screen flex-col items-center justify-start lg:p-32 py-20 bg-primary">
+            <div className="flex flex-col mx-24 lg:h-96 w-full">
                 <div className="flex flex-col flex-1 px-12 justify-between h-full">
                     <h1 className="text-3xl font-bold text-secondary">DESA KOTO TUO BARAT</h1>
-                    <p className="text-justify indent-8">
+                    <p className="text-justify indent-8 sm:my-5">
                         {desc}
                     </p>
                     <Link className="border-2 border-secondary rounded-xl font-medium
-                        text-secondary py-2 px-3 w-1/4 hover:bg-secondary hover:text-primary text-center" href="/profil">
+                        text-secondary py-2 px-3 w-1/4 hover:bg-secondary hover:text-primary text-center" href={"/profil"}>
                         Selengkapnya
                     </Link>
                 </div>
-                <img src="/simpangKobar.jpeg" className="w-1/3 border-2 border-secondary" alt="Simpang Kobar"/>
+                <img src="/simpangKobar.jpeg" className="lg:w-1/3 m-10 border-2 border-secondary" alt="Simpang Kobar"/>
             </div>
         </div>
     )

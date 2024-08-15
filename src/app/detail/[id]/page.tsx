@@ -32,15 +32,17 @@ export default function DetailPage({ params }: Params) {
             <Navbar/>
             <main className="flex flex-col w-full min-h-screen bg-secondary items-center justify-center">
                 <div className="flex w-full px-20 pt-20">
-                    <div className="flex flex-col w-5/6 my-auto">
+                    <div className="flex flex-col lg:w-5/6 my-auto">
                         <h1 className="text-primary font-bold text-4xl my-1">{item.nama}</h1>
-                        <h1 className="text-primary text-md mt-2">{item.tgl}</h1>
-                        <div className="flex flex-col me-20">
-                            <p className="text-primary text-sm text-justify my-10">
+                        <h1 className="text-primary text-md lg:mt-2 my-2">{item.tgl}</h1>
+                        <img className="max-h-[29rem] h-full size-full border-2 border-primary"
+                             src={item.foto[switchFoto]} alt={item.foto[switchFoto]}/>
+                        <div className="flex flex-col lg:me-20">
+                            <p className="text-primary text-sm text-justify lg:my-10 my-5">
                                 {item.desc}
                             </p>
                         </div>
-                        <div>
+                        <div className="sm:hidden md:hidden">
                             {item.foto.slice(1, 5).map((photo: any, index: number) => (
                                 <button
                                     key={index}
@@ -48,13 +50,23 @@ export default function DetailPage({ params }: Params) {
                                     className="size-40 me-11">
                                     <img src={photo} className="border-2 border-primary size-40" alt={photo.name}/>
                                 </button>
-                                ))}
+                            ))}
                         </div>
                     </div>
-                    <div className="h-full w-1/2 flex items-center justify-center">
+                    <div className="h-full w-1/2 flex items-center justify-center sm:hidden md:hidden">
                         <img className="max-h-[29rem] h-full size-full border-2 border-primary"
                              src={item.foto[switchFoto]} alt={item.foto[switchFoto]}/>
                     </div>
+                </div>
+                <div className="lg:hidden ms-6">
+                    {item.foto.slice(1, 5).map((photo: any, index: number) => (
+                        <button
+                            key={index}
+                            onClick={() => setSwitchFoto(index + 1)}
+                            className="size-32 me-6">
+                            <img src={photo} className="border-2 border-primary size-32" alt={photo.name}/>
+                        </button>
+                    ))}
                 </div>
             </main>
         </>

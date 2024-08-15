@@ -15,11 +15,11 @@ export default function GalleryPage() {
         <>
             <main className="flex flex-col w-full min-h-screen bg-secondary">
                 <h1 className="text-primary text-4xl font-bold text-center pt-10">Gallery Desa Koto Tuo Barat</h1>
-                <div className="grid grid-cols-4 gap-4 place-items-stretch h-[87] my-5 px-20 pb-5">
+                <div className="lg:grid grid-cols-4 gap-4 place-items-stretch h-[87] my-5 px-20 pb-5">
                     {data.slice(0,visibleCount).map((item, index) => (
                         <Link
                             key={index}
-                            className="h-96 border-2 border-primary flex flex-col justify-between"
+                            className="h-96 border-2 border-primary flex flex-col justify-between mb-3"
                             style={{
                                 backgroundImage: `url(${item.foto[0]})`,
                                 backgroundSize: 'cover',
@@ -37,7 +37,7 @@ export default function GalleryPage() {
                     <div className="w-full flex justify-center items-center mb-10">
                         <button
                             onClick={loadMore}
-                            className="border-2 border-primary px-5 py-2 rounded-lg w-1/6 text-primary hover:bg-primary hover:text-secondary text-center">
+                            className="border-2 border-primary px-5 py-2 rounded-lg lg:w-1/6 text-primary hover:bg-primary hover:text-secondary text-center">
                             Load More
                         </button>
                     </div>

@@ -3,7 +3,7 @@
 import { useState } from 'react';
 import Link from 'next/link';
 import { Link as ScrollLink } from 'react-scroll';
-import { Dialog } from '@headlessui/react';
+import { Dialog, DialogPanel } from '@headlessui/react';
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline';
 
 export default function Navbar() {
@@ -16,8 +16,8 @@ export default function Navbar() {
     ]
 
     return (
-        <header className="fixed inset-x-0 top-0 z-[999]">
-            <nav className="flex items-center justify-between p-3 lg:px-8 bg-secondary bg-opacity-35 text-primary" aria-label="Global">
+        <header className="fixed inset-x-0 top-0 z-[999] md">
+            <nav className={`flex items-center justify-between p-3 lg:px-8 bg-secondary bg-opacity-35 text-primary ${mobileMenuOpen ? 'hidden' : ''}`} aria-label="Global">
                 <Link href="/" className="flex flex-none" passHref>
                     <div className="-m-1.5 p-1.5">
                         <span className="sr-only">Logo XII Koto Kampar</span>
@@ -30,7 +30,7 @@ export default function Navbar() {
                 <div className="flex lg:hidden">
                     <button
                         type="button"
-                        className="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-secondary"
+                        className="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-primary"
                         onClick={() => setMobileMenuOpen(true)}
                     >
                         <span className="sr-only">Open main menu</span>
@@ -59,7 +59,7 @@ export default function Navbar() {
             {/* Mobile Menu */}
             <Dialog as="div" className="lg:hidden" open={mobileMenuOpen} onClose={() => setMobileMenuOpen(false)}>
                 <div className="fixed inset-0 z-50" />
-                <Dialog.Panel className="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-white px-6 py-3 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
+                <DialogPanel className="fixed inset-y-0 right-0 z-50 bg-primary w-full overflow-y-auto bg-white px-6 py-3 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
                     <div className="flex items-center justify-between">
                         <Link href="/" passHref>
                             <div className="-m-1.5 p-1.5">
@@ -93,7 +93,7 @@ export default function Navbar() {
                             </div>
                         </div>
                     </div>
-                </Dialog.Panel>
+                </DialogPanel>
             </Dialog>
         </header>
     );
