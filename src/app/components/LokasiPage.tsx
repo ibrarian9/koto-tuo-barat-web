@@ -3,7 +3,7 @@ export default function LokasiPage() {
         <>
             <main className="flex flex-col min-h-screen bg-primary">
                 <h2 className="text-secondary font-bold text-4xl text-center mt-5 mb-10">Lokasi Desa Koto Tuo Barat</h2>
-                <div className="flex sm:flex-col h-full justify-center items-center">
+                <div className="flex flex-col lg:flex-row h-full justify-center items-center">
                     <div className="lg:size-1/3 mx-5">
                         <img src="/denahKobar.jpeg" alt="Denah Kobar"/>
                         <h2 className="text-secondary font-bold text-sm text-start my-5">DENAH DESA</h2>

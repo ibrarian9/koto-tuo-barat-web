@@ -32,7 +32,7 @@ export default function ProfilePage(){
         <>
             <Navbar/>
             <div className="flex min-h-screen flex-col items-center justify-start lg:p-32 p-10 bg-secondary">
-                <div className="flex sm:flex-col lg:mx-24 w-full border-2 border-primary px-10 py-5 mt-10 text-primary">
+                <div className="flex flex-col lg:flex-row lg:mx-24 w-full border-2 border-primary px-10 py-5 mt-10 text-primary">
                     <div className="flex flex-col flex-1 px-5 justify-between h-full lg:me-10">
                         <h1 className="text-2xl font-bold mb-5">Sejarah Desa Koto Tuo Barat</h1>
                         <p className="text-justify indent-10">
@@ -48,13 +48,13 @@ export default function ProfilePage(){
                             {desc3}
                         </p>
                     </div>
-                    <img src="/simpangKobar.jpeg" className="lg:w-1/3 h-96 border-2 border-primary mt-10" alt="Simpang Kobar"/>
+                    <img src="/simpangKobar.jpeg" className="lg:w-1/3 h-96 border-2 border-primary mt-10 lg:mt-0" alt="Simpang Kobar"/>
                 </div>
             </div>
             <div className="min-h-screen w-full bg-primary flex flex-col items-center justify-center">
                 <div className="h-fit w-full text-secondary">
-                    <h1 className="text-3xl font-bold text-center lg:mb-14 my-10">VISI & MISI</h1>
-                    <div className="lg:grid grid-cols-2 gap-20 w-full h-full px-36">
+                    <h1 className="text-3xl font-bold text-center lg:mb-14 my-10 lg:my-0">VISI & MISI</h1>
+                    <div className="lg:grid grid-cols-2 gap-20 w-full h-full px-10 md:px-36">
                         <div className="h-full">
                             <p className="text-justify indent-10 p-10 border-2 h-full">
                                 {visi}

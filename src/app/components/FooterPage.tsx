@@ -13,7 +13,7 @@ export default function FooterPage() {
                         <div className="flex flex-col items-start my-auto">
                             <div className="flex items-center mb-3">
                                 <img src="/logo-13-koto-kampar.png" alt="Logo" className="h-12 w-auto"/>
-                                <span className="ml-3 text-2xl font-bold">Koto Tuo Barat</span>
+                                <span className="lg:ml-3 ml-2 lg:text-2xl text-xl font-bold">Koto Tuo Barat</span>
                             </div>
                             <p className="text-sm ms-1">Desa Koto Tuo Barat terletak di XIII Koto Kampar.</p>
                         </div>

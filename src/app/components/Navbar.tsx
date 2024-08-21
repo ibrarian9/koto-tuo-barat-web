@@ -16,7 +16,7 @@ export default function Navbar() {
     ]
 
     return (
-        <header className="fixed inset-x-0 top-0 z-[999] md">
+        <header className="fixed inset-x-0 top-0 z-[999]">
             <nav className={`flex items-center justify-between p-3 lg:px-8 bg-secondary bg-opacity-35 text-primary ${mobileMenuOpen ? 'hidden' : ''}`} aria-label="Global">
                 <Link href="/" className="flex flex-none" passHref>
                     <div className="-m-1.5 p-1.5">
