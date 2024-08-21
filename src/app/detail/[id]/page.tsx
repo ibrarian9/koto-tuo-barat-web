@@ -35,14 +35,14 @@ export default function DetailPage({ params }: Params) {
                     <div className="flex flex-col lg:w-5/6 my-auto">
                         <h1 className="text-primary font-bold text-4xl my-1">{item.nama}</h1>
                         <h1 className="text-primary text-md lg:mt-2 my-2">{item.tgl}</h1>
-                        <img className="max-h-[29rem] h-full size-full border-2 border-primary"
+                        <img className="max-h-[29rem] h-full size-full border-2 border-primary sm:hidden md:hidden"
                              src={item.foto[switchFoto]} alt={item.foto[switchFoto]}/>
                         <div className="flex flex-col lg:me-20">
                             <p className="text-primary text-sm text-justify lg:my-10 my-5">
                                 {item.desc}
                             </p>
                         </div>
-                        <div className="sm:hidden md:hidden">
+                        <div className="">
                             {item.foto.slice(1, 5).map((photo: any, index: number) => (
                                 <button
                                     key={index}
@@ -53,7 +53,7 @@ export default function DetailPage({ params }: Params) {
                             ))}
                         </div>
                     </div>
-                    <div className="h-full w-1/2 flex items-center justify-center sm:hidden md:hidden">
+                    <div className="h-full w-1/2 flex items-center justify-center sm:invisible md:invisible lg:visible">
                         <img className="max-h-[29rem] h-full size-full border-2 border-primary"
                              src={item.foto[switchFoto]} alt={item.foto[switchFoto]}/>
                     </div>
