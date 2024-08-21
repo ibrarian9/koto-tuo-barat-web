@@ -17,7 +17,7 @@ export default function ProfilePage() {
 
     return (
         <div className="flex min-h-screen flex-col items-center justify-start lg:p-32 py-20 bg-primary">
-            <div className="flex flex-col mx-24 lg:h-96 w-full">
+            <div className="flex flex-col lg:flex-row mx-24 lg:h-96 w-full">
                 <div className="flex flex-col flex-1 px-12 justify-between h-full">
                     <h1 className="text-3xl font-bold text-secondary">DESA KOTO TUO BARAT</h1>
                     <p className="text-justify indent-8 sm:my-5">
