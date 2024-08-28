@@ -43,7 +43,7 @@ export default function Navbar() {
                             <Link
                                 key={item.name}
                                 href={item.href}
-                                className='w-auto font-medium text-secondary md:grid items-center'
+                                className='w-auto font-medium md:grid items-center'
                             >
                                 {item.name}
                             </Link>

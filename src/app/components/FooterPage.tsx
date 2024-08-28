@@ -31,15 +31,6 @@ export default function FooterPage() {
                                     />
                                     {instagram}
                                 </a>
-                                <div className="text-sm flex mt-1">
-                                    <Image
-                                        src={"/tik-tok.png"}
-                                        alt={"Tiktok"}
-                                        width={20} height={20}
-                                        className="me-2"
-                                    />
-                                    {tiktok}
-                                </div>
                             </div>
                         </div>
                     </div>
